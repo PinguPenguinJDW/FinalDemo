@@ -104,7 +104,7 @@
     <div id="label-container">
         <div class="confidence-bar" id="confidence-bar"></div>
     </div>
-    <button class="analyse-button" id="analyse-button">Analyze</button>
+    <button class="analyse-button" id="analyse-button">Next Step</button>
 
     <!-- Debugging section -->
     <div id="debugging-section">
@@ -190,7 +190,7 @@
             requestAnimationFrame(updateRealTimeFeedback);
         }
 
-        // Analyze current step and move to next if criteria are met
+        // Analyse current step and move to next if criteria are met
         document.getElementById('analyse-button').addEventListener('click', async () => {
             const video = document.getElementById('video');
             const currentLabel = steps[currentStep].label;
